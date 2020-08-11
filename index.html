@@ -103,15 +103,6 @@
         </tbody>
       </table>
 
-
-
-
-
-
-
-
-
-
     </div>
 
 
@@ -129,7 +120,7 @@
 
       var currentDate = $("#currentDay")
 
-      var inp9 = $("9inp") 
+      var inp9 = $("9inp").value 
 
       var but9 = $("9but")
 
@@ -137,16 +128,22 @@
 
       currentDate.html(date)
 
+
+      // code for saving to local storage 
+
       but9.on("click", function(){
 
-        inp9.setitem()
-
-
-
-
-
+        localStorage.setItem("9am", inp9)
 
       })
+
+
+
+      //code for coloring time sections/Graying past events....
+
+      if(date ===)
+
+
 
 
 
