@@ -18,7 +18,11 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+
+
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -27,12 +31,112 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+
+      <table class="table table-bordered">
+        <thead>
+          <tr class = "time-block">
+            <th scope="col">Time</th>
+            <th scope="col">Agenda</th>
+            <th scope="col">Save</th>
+            
+          </tr>
+        </thead>
+        <tbody class = "time-block textarea">
+          <tr>
+            <th scope="row">9:00 AM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+        
+          </tr>
+          <tr>
+            <th scope="row">10:00 AM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+           
+          </tr>
+          <tr>
+            <th scope="row">11:00 AM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">12:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">1:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">2:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">3:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">4:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+          <tr>
+            <th scope="row">5:00 PM</th>
+            <td><input type = "text" class = "text-width"></td>
+            <td><button class="saveBtn">save</button></td>
+            
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
     </div>
+
+
+  
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    <script>
+
+      // Variables
+
+      var date = moment().format("ddd MM YYYY");
+
+      var currentDate = $("#currentDay")
+
+      // Code for date at top of page
+
+      currentDate.html(date)
+
+
+
+
+    </script>
+
   </body>
 </html>
