@@ -48,8 +48,8 @@
         <tbody class = "time-block textarea">
           <tr>
             <th scope="row">9:00 AM</th>
-            <td><input type = "text" class = "text-width"></td>
-            <td><button class="saveBtn">save</button></td>
+            <td><input type = "text" class = "text-width" id="9inp"></td>
+            <td><button id= "9but" class="saveBtn">save</button></td>
         
           </tr>
           <tr>
@@ -129,9 +129,24 @@
 
       var currentDate = $("#currentDay")
 
+      var inp9 = $("9inp") 
+
+      var but9 = $("9but")
+
       // Code for date at top of page
 
       currentDate.html(date)
+
+      but9.on("click", function(){
+
+        inp9.setitem()
+
+
+
+
+
+
+      })
 
 
 
